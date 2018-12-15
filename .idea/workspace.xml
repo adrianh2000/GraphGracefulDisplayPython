@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcb46944-05b0-48d1-b998-3f7b9762afec" name="Default Changelist" comment="" />
+    <list default="true" id="fcb46944-05b0-48d1-b998-3f7b9762afec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphGracefulDrawingMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/GraphGracefulDrawingMain.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphGracefulDrawingMain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1474">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="1094">
+              <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -34,7 +37,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>a-a</find>
+      <find>green</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,6 +57,7 @@
     <option name="width" value="1496" />
     <option name="height" value="1141" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -122,13 +131,21 @@
       <option name="presentableId" value="Default" />
       <updated>1544795442852</updated>
     </task>
+    <task id="LOCAL-00001" summary="Another file that was not committed before">
+      <created>1544824684790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544824684790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="245" y="223" width="1496" height="1141" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2569638" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26392758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -149,11 +166,15 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Another file that was not committed before" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another file that was not committed before" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GraphGracefulDrawingMain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1474">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="1094">
+          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

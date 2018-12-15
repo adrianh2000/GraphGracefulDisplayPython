@@ -2,11 +2,11 @@ from tkinter import *
 import random
 import copy
 
-canvas_width = 1600
-canvas_height = 1600
-num_trees_width = 14
+canvas_width = 1000
+canvas_height = 1000
+num_trees_width = 8
 box_width = canvas_width / num_trees_width
-num_trees_height = 14
+num_trees_height = 8
 box_height = canvas_height / num_trees_height
 num_vertices = 10
 
@@ -23,10 +23,13 @@ vertex_colors = {
 
 master = Tk()
 
+master.title("Graceful Tree Display")
+
 w = Canvas(master,
            width=canvas_width,
            height=canvas_height)
-w.pack()
+# w.pack()
+w.grid(row=0, column=0, sticky=N)
 
 
 class Vertex:
@@ -57,6 +60,7 @@ class Vertex:
                            vertex_y + self.radius, fill=self.fill_color)
 
         canvas.create_text(vertex_x, vertex_y, text=self.label, font=('Times', -1 * self.radius, 'bold'))
+
 
 class Graph:
     def __init__(self, vertex_list, edge_list):
@@ -102,7 +106,7 @@ class Graph:
                 x = float(cur_list[1]) * (x1-x0) + x0
                 y = float(cur_list[2]) * (y1-y0) + y0
 
-            new_vertex = Vertex(x, y, 10, cur_list[0], '#CCFFCC')
+            new_vertex = Vertex(x, y, 10, cur_list[0])
             self.vertex_list.append(new_vertex)
             cur_line = f.readline()
 
@@ -167,8 +171,8 @@ def create_list_of_trees_with_graceful_labelings(file_name, tree_graph: Graph):
         new_graph = copy.deepcopy(tree_graph)
 
         # set the new graph vertex labels to the graceful ones
-        for index, cur_vertex in enumerate(new_graph.vertex_list):
-            cur_vertex.set_label(vertex_labels[index])
+        for vertex_index, cur_vertex in enumerate(new_graph.vertex_list):
+            cur_vertex.set_label(vertex_labels[vertex_index])
 
         # add new tree to the list
         list_trees.append(new_graph)
@@ -183,7 +187,7 @@ vertex_list0 = []
 for i in range(0, num_vertices):
     x = random.randint(0, canvas_width)
     y = random.randint(0, canvas_height)
-    v = Vertex(x, y, 10, str(i), vertex_colors['green3'])
+    v = Vertex(x, y, 10, str(i), vertex_colors['blue1'])
     vertex_list0.append(v)
 
 edge_list0 = [[1, 2], [2, 3], [3, 4], [5, 2]]
@@ -207,6 +211,20 @@ for index, my_tree in enumerate(tree_list):
     y1 = y0 + box_height
     my_tree.draw(w, x0, y0, x1, y1)
 
+
+def btn_prev_click():
+    print("You pressed button prev")
+
+
+def btn_next_click():
+    print("You pressed button next")
+
+
+btn_prev = Button(master, text="<< Previous", width="12", command=btn_prev_click)
+btn_prev.grid(row=1, column=0, sticky="E")
+
+btn_next = Button(master, text="Next >>", width="12", command=btn_next_click)
+btn_next.grid(row=1, column=1, sticky="W")
 
 mainloop()
 
